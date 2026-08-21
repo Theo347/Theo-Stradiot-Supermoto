@@ -9,12 +9,12 @@ function App() {
               THÉO<span className="text-[#CC0000]"> STRADIOT</span>
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-6">
-                <a href="#home" className="hover:text-[#CC0000] px-3 py-2 rounded-md font-bold transition-colors">Accueil</a>
-                <a href="#about" className="hover:text-[#CC0000] px-3 py-2 rounded-md font-bold transition-colors">Le Projet</a>
-                <a href="#bike" className="hover:text-[#CC0000] px-3 py-2 rounded-md font-bold transition-colors">La Machine</a>
-                <a href="#sponsors" className="hover:text-[#CC0000] px-3 py-2 rounded-md font-bold transition-colors">Sponsors</a>
-                <a href="#contact" className="hover:text-[#CC0000] px-3 py-2 rounded-md font-bold transition-colors">Contact</a>
+              <div className="ml-10 flex items-center space-x-3">
+                <a href="#home" className="px-4 py-1.5 rounded-full border-2 border-[#CC0000] text-white hover:bg-[#CC0000]/10 font-bold text-sm transition-transform hover:scale-105">Accueil</a>
+                <a href="#about" className="px-4 py-1.5 rounded-full border-2 border-[#CC0000] text-white hover:bg-[#CC0000]/10 font-bold text-sm transition-transform hover:scale-105">Le Projet</a>
+                <a href="#bike" className="px-4 py-1.5 rounded-full border-2 border-[#CC0000] text-white hover:bg-[#CC0000]/10 font-bold text-sm transition-transform hover:scale-105">La Machine</a>
+                <a href="#sponsors" className="px-4 py-1.5 rounded-full border-2 border-[#CC0000] text-white hover:bg-[#CC0000]/10 font-bold text-sm transition-transform hover:scale-105">Sponsors</a>
+                <a href="#contact" className="px-4 py-1.5 rounded-full bg-[#CC0000] text-white hover:bg-red-800 font-bold text-sm transition-transform hover:scale-105 shadow-md shadow-red-900/30">Contact</a>
               </div>
             </div>
           </div>
