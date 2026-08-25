@@ -3,7 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
-  // Initialisation de AOS au chargement de la page
   useEffect(() => {
     AOS.init({
       duration: 800, // Durée de l'animation en millisecondes
@@ -13,7 +12,6 @@ function App() {
   }, []);
 
   return (
-    // J'ai ajouté overflow-x-hidden ici pour éviter l'apparition d'une barre de défilement horizontale pendant les animations
     <div className="min-h-screen font-sans bg-[#111111] text-white overflow-x-hidden">
       {/* HEADER / NAVIGATION */}
       <nav className="fixed w-full bg-black/95 backdrop-blur-md z-50 border-b border-red-700/30">
@@ -286,7 +284,7 @@ function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black py-8 border-t border-gray-800 text-center" data-aos="fade-in" data-aos-delay="200">
+      <footer className="bg-black py-8 border-t border-gray-800 text-center">
         <p className="text-gray-300 font-bold text-sm">
           © {new Date().getFullYear()} Théo Stradiot. Tous droits réservés.
         </p>
