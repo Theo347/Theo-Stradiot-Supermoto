@@ -17,7 +17,7 @@ export default function Navbar() {
             <div className="ml-10 flex items-center space-x-3">
               <NavLink to="/" className={navLinkStyle}>Accueil</NavLink>
               <NavLink to="/projet" className={navLinkStyle}>Le Projet</NavLink>
-              <NavLink to="/machine" className={navLinkStyle}>La Machine</NavLink>
+              {/* <NavLink to="/machine" className={navLinkStyle}>La Machine</NavLink>*/}
               <NavLink to="/partenaires" className={navLinkStyle}>Sponsors</NavLink>
               <NavLink to="/calendrier" className={navLinkStyle}>Calendrier</NavLink>
               <NavLink 
