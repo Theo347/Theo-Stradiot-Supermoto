@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import "../App.css"
+
 export default function Partenaires() {
   return (
     <section className="pt-28 pb-20 bg-black min-h-screen">
@@ -58,6 +61,12 @@ export default function Partenaires() {
           ** Sous réserve de conditions. Les emplacements seront définis en accord avec le partenaire.
         </p>
       </div>
+
+      <div className="mt-10 flex justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+          <Link to="/contact" className="bg-[#CC0000] hover:bg-red-800 text-white font-extrabold text-lg py-4 px-20 rounded-full transition-transform hover:scale-105 shadow-lg shadow-red-900/30 animate-pulse-scale">
+            Me contacter
+          </Link>
+        </div>
     </section>
   );
 }

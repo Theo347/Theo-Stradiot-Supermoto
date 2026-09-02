@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Projet from './pages/Projet';
 //import Machine from './pages/Machine';
 import Partenaires from './pages/Partenaires';
+import Sponsors from './pages/sponsors';
 import Contact from './pages/Contact';
 import Calendrier from './pages/Calendrier';
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/projet" element={<Projet />} />
             {/*<Route path="/machine" element={<Machine />} />*/}
             <Route path="/partenaires" element={<Partenaires />} />
+            <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/calendrier" element={<Calendrier />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

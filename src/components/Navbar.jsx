@@ -18,7 +18,8 @@ export default function Navbar() {
               <NavLink to="/" className={navLinkStyle}>Accueil</NavLink>
               <NavLink to="/projet" className={navLinkStyle}>Le Projet</NavLink>
               {/* <NavLink to="/machine" className={navLinkStyle}>La Machine</NavLink>*/}
-              <NavLink to="/partenaires" className={navLinkStyle}>Sponsors</NavLink>
+              <NavLink to="/partenaires" className={navLinkStyle}>Devenir Partenaire</NavLink>
+              <NavLink to="/sponsors" className={navLinkStyle}>Sponsors</NavLink>
               <NavLink to="/calendrier" className={navLinkStyle}>Calendrier</NavLink>
               <NavLink 
                 to="/contact" 
