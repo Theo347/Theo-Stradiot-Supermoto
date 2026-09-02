@@ -1,3 +1,5 @@
+import "../App.css";
+
 /**
  * Calcule le statut dynamique de l'événement en fonction de la date du jour
  */
@@ -113,7 +115,7 @@ export const downloadICS = (event) => {
 export const getStatusBadgeStyle = (status) => {
   switch (status) {
     case "En ce moment même":
-      return "bg-orange-900/40 text-orange-400 border border-orange-500/30 animate-pulse";
+      return "bg-orange-500/20 text-orange-300 border border-orange-400 shadow-[0_0_12px_rgba(249,115,22,0.6)] animate-pulse animate-pulse-scale inline-block";
     case "À venir":
       return "bg-green-900/40 text-green-400 border border-green-500/30";
     case "Terminé":
