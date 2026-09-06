@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex-shrink-0 font-bold text-2xl tracking-wider font-extrabold leading-tight text-white">
-            THÉO<span className="text-[#CC0000]"> STRADIOT</span>
+            THÉO<span className="text-red-brand"> STRADIOT</span>
           </Link>
           
           {/* Menu PC */}
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-[#CC0000] focus:outline-none transition-colors"
+              className="text-white hover:text-red-brand focus:outline-none transition-colors"
               aria-label="Menu"
             >
               <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

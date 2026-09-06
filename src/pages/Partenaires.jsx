@@ -5,7 +5,7 @@ export default function Partenaires() {
     <section className="pt-28 pb-20 bg-black min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16" data-aos="fade-up">
-          <h2 className="text-3xl sm:text-4xl font-bold uppercase">Devenir <span className="text-[#CC0000]">Partenaire</span></h2>
+          <h2 className="text-3xl sm:text-4xl font-bold uppercase">Devenir <span className="text-red-brand">Partenaire</span></h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-100 font-semibold max-w-3xl mx-auto text-base sm:text-lg">
             Construire un projet solide demande un investissement constant. Je suis à la recherche de sponsors souhaitant s’associer à mon projet, m’accompagner dans son développement et contribuer à sa réussite.
@@ -40,19 +40,19 @@ export default function Partenaires() {
         <h3 className="text-xl sm:text-2xl font-bold text-center mb-8 text-white" data-aos="fade-up">📲 Quelle visibilité pour vous ?</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="border border-gray-800 p-6 rounded-lg text-center hover:border-[#CC0000] transition-colors bg-[#111111]" data-aos="flip-up" data-aos-delay="100">
-            <h4 className="font-bold text-[#CC0000] mb-3">Équipement & Moto</h4>
+            <h4 className="font-bold text-red-brand mb-3">Équipement & Moto</h4>
             <p className="text-sm font-semibold text-gray-100">Logo sur la moto, combinaison, casque, tenue et pulls officiels.**</p>
           </div>
           <div className="border border-gray-800 p-6 rounded-lg text-center hover:border-[#CC0000] transition-colors bg-[#111111]" data-aos="flip-up" data-aos-delay="200">
-            <h4 className="font-bold text-[#CC0000] mb-3">Présence Digitale</h4>
+            <h4 className="font-bold text-red-brand mb-3">Présence Digitale</h4>
             <p className="text-sm font-semibold text-gray-100">Page dédiée sur ce site web et mentions régulières sur mes réseaux sociaux.</p>
           </div>
           <div className="border border-gray-800 p-6 rounded-lg text-center hover:border-[#CC0000] transition-colors bg-[#111111]" data-aos="flip-up" data-aos-delay="300">
-            <h4 className="font-bold text-[#CC0000] mb-3">Événements</h4>
+            <h4 className="font-bold text-red-brand mb-3">Événements</h4>
             <p className="text-sm font-semibold text-gray-100">Visibilité lors des compétitions, et sur les photos/vidéos partagées.</p>
           </div>
           <div className="border border-gray-800 p-6 rounded-lg text-center hover:border-[#CC0000] transition-colors bg-[#111111]" data-aos="flip-up" data-aos-delay="400">
-            <h4 className="font-bold text-[#CC0000] mb-3">Image & Valeurs</h4>
+            <h4 className="font-bold text-red-brand mb-3">Image & Valeurs</h4>
             <p className="text-sm font-semibold text-gray-100">Associez votre marque à la performance, la précision et la détermination.</p>
           </div>
         </div>

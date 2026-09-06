@@ -11,7 +11,7 @@ export default function sponsors() {
         {/* En-tête */}
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold uppercase text-white">
-            Mes <span className="text-[#CC0000]">Sponsors</span>
+            Mes <span className="text-red-brand">Sponsors</span>
           </h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-300 font-semibold max-w-2xl mx-auto">
@@ -65,7 +65,7 @@ export default function sponsors() {
                     href={sponsor.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#CC0000] hover:underline font-bold text-sm"
+                    className="text-red-brand hover:underline font-bold text-sm"
                   >
                     Visiter le site web →
                   </a>

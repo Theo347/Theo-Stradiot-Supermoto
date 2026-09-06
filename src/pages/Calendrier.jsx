@@ -180,7 +180,7 @@ export default function Calendrier() {
         {/* Titre */}
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold uppercase">
-            Calendrier <span className="text-[#CC0000]">Saison 2026</span>
+            Calendrier <span className="text-red-brand">Saison 2026</span>
           </h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-100 font-semibold max-w-2xl mx-auto">
@@ -246,7 +246,7 @@ export default function Calendrier() {
                   <div>
                     {/* Header Carte : Type & Statut */}
                     <div className="flex justify-between items-center mb-4">
-                      <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-[#CC0000]/10 text-[#CC0000] border border-[#CC0000]/30">
+                      <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-[#CC0000]/10 text-red-brand border border-[#CC0000]/30">
                         {event.type}
                       </span>
                       
@@ -282,7 +282,7 @@ export default function Calendrier() {
                         <span> {event.countryName} </span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#CC0000] transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-brand transition-colors">
                       {event.title}
                     </h3>
                     <p className="text-gray-300 text-sm font-semibold mb-6">
