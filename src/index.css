@@ -21,12 +21,12 @@ html {
 
 :root {
   /* Rouge standard pour PC */
-  --brand-!text-[#FF0000]: #ff0000; 
+  --brand-red: #ff0000; 
 }
 
 /* Rouge éclatant pour smartphones (écrans P3) */
 @supports (color: color(display-p3 1 0 0)) {
   :root {
-    --brand-!text-[#FF0000]: color(display-p3 1 0 0);
+    --brand-red: color(display-p3 1 0 0);
   }
 }
