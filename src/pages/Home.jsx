@@ -6,7 +6,7 @@ export default function Home() {
       <div className="w-full md:w-1/2 flex flex-col justify-center" data-aos="fade-right">
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold uppercase leading-tight">
           Pilote <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-!text-[#FF0000]-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-red-500">
             Supermoto
           </span>
         </h1>
