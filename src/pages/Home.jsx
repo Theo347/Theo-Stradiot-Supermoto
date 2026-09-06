@@ -6,7 +6,7 @@ export default function Home() {
       <div className="w-full md:w-1/2 flex flex-col justify-center" data-aos="fade-right">
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold uppercase leading-tight">
           Pilote <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-red-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-!text-[#FF0000]-500">
             Supermoto
           </span>
         </h1>
@@ -14,7 +14,7 @@ export default function Home() {
           Jeune pilote belge passionné de Supermoto, je construis aujourd’hui un projet sportif sérieux avec un objectif clair : progresser et participer aux plus grands événements, tels que les championnats de Belgique et de France, avec pour ambition ultime de prendre part au mythique Superbiker de Mettet.
         </p>
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto" data-aos="fade-up" data-aos-delay="200">
-          <Link to="/partenaires" className="bg-[#CC0000] hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full text-center transition-transform hover:scale-105 shadow-lg shadow-red-900/30">
+          <Link to="/partenaires" className="bg-[#CC0000] hover:bg-!text-[#FF0000]-800 text-white font-bold py-3 px-8 rounded-full text-center transition-transform hover:scale-105 shadow-lg shadow-!text-[#FF0000]-900/30">
             Devenir Partenaire
           </Link>
           <Link to="/projet" className="border-2 border-[#CC0000] text-white hover:bg-[#CC0000]/10 font-bold py-3 px-8 rounded-full text-center transition-colors">

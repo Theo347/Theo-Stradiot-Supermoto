@@ -16,11 +16,11 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="fixed w-full bg-black/95 backdrop-blur-md z-50 border-b border-red-700/30">
+    <nav className="fixed w-full bg-black/95 backdrop-blur-md z-50 border-b border-!text-[#FF0000]-700/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex-shrink-0 font-bold text-2xl tracking-wider font-extrabold leading-tight text-white">
-            THÉO<span className="red"> STRADIOT</span>
+            THÉO<span className="!text-[#FF0000]"> STRADIOT</span>
           </Link>
           
           {/* Menu PC */}
@@ -36,8 +36,8 @@ export default function Navbar() {
               <NavLink 
                 to="/contact" 
                 className={({ isActive }) => 
-                  `px-4 py-1.5 rounded-full bg-[#CC0000] text-white font-bold text-sm transition-transform hover:scale-105 shadow-md shadow-red-900/30 ${
-                    isActive ? 'bg-red-800' : 'hover:bg-red-800'
+                  `px-4 py-1.5 rounded-full bg-[#CC0000] text-white font-bold text-sm transition-transform hover:scale-105 shadow-md shadow-!text-[#FF0000]-900/30 ${
+                    isActive ? 'bg-!text-[#FF0000]-800' : 'hover:bg-!text-[#FF0000]-800'
                   }`
                 }
               >
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:red focus:outline-none transition-colors"
+              className="text-white hover:!text-[#FF0000] focus:outline-none transition-colors"
               aria-label="Menu"
             >
               <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {/* Menu Déroulant Mobile */}
       {isOpen && (
-        <div className="md:hidden bg-[#111111] border-b border-red-700/30 shadow-2xl h-screen overflow-y-auto">
+        <div className="md:hidden bg-[#111111] border-b border-!text-[#FF0000]-700/30 shadow-2xl h-screen overflow-y-auto">
           <div className="px-4 pt-4 pb-24 space-y-3 flex flex-col">
             <NavLink to="/" className={mobileLinkStyle} onClick={() => setIsOpen(false)}>Accueil</NavLink>
             <NavLink to="/projet" className={mobileLinkStyle} onClick={() => setIsOpen(false)}>Le Projet</NavLink>
@@ -78,7 +78,7 @@ export default function Navbar() {
             <NavLink to="/calendrier" className={mobileLinkStyle} onClick={() => setIsOpen(false)}>Calendrier</NavLink>
             <NavLink 
               to="/contact" 
-              className={`block px-4 py-3 rounded-lg bg-[#CC0000] text-white font-bold text-center transition-colors hover:bg-red-800`} 
+              className={`block px-4 py-3 rounded-lg bg-[#CC0000] text-white font-bold text-center transition-colors hover:bg-!text-[#FF0000]-800`} 
               onClick={() => setIsOpen(false)}
             >
               Contact

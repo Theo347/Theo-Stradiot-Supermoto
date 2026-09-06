@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         honda: {
-          red: '#CC0000',
+          !text-[#FF0000]: '#CC0000',
           dark: '#111111',
         }
       }

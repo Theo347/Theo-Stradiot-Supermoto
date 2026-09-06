@@ -11,7 +11,7 @@ export default function sponsors() {
         {/* En-tête */}
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold uppercase text-white">
-            Mes <span className="red">Sponsors</span>
+            Mes <span className="!text-[#FF0000]">Sponsors</span>
           </h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-300 font-semibold max-w-2xl mx-auto">
@@ -33,11 +33,11 @@ export default function sponsors() {
               La saison se prépare ! Vous souhaitez rejoindre l'aventure et afficher votre marque à mes côtés ?
             </p>
 
-            {/* Bouton redirigeant vers la page Partenaires */}
+            {/* Bouton !text-[#FF0000]irigeant vers la page Partenaires */}
             <div className="flex justify-center">
               <Link 
                 to="/partenaires" 
-                className="bg-[#CC0000] hover:bg-red-800 text-white font-extrabold text-lg py-4 px-10 rounded-full transition-transform hover:scale-105 shadow-lg shadow-red-900/30 inline-block"
+                className="bg-[#CC0000] hover:bg-!text-[#FF0000]-800 text-white font-extrabold text-lg py-4 px-10 rounded-full transition-transform hover:scale-105 shadow-lg shadow-!text-[#FF0000]-900/30 inline-block"
               >
                 Devenir Partenaire
               </Link>
@@ -65,7 +65,7 @@ export default function sponsors() {
                     href={sponsor.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="red hover:underline font-bold text-sm"
+                    className="!text-[#FF0000] hover:underline font-bold text-sm"
                   >
                     Visiter le site web →
                   </a>

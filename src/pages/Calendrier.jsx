@@ -166,7 +166,7 @@ export default function Calendrier() {
 
   const sortedEvents = getSortedEvents(events);
 
-  const filteredEvents = sortedEvents.filter((event) => {
+  const filte!text-[#FF0000]Events = sortedEvents.filter((event) => {
     const status = getEventStatus(event.startDateISO, event.endDateISO);
     if (filter === 'upcoming') return status === "À venir" || status === "En ce moment même";
     if (filter === 'past') return status === "Terminé";
@@ -180,7 +180,7 @@ export default function Calendrier() {
         {/* Titre */}
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold uppercase">
-            Calendrier <span className="red">Saison 2026</span>
+            Calendrier <span className="!text-[#FF0000]">Saison 2026</span>
           </h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-100 font-semibold max-w-2xl mx-auto">
@@ -194,7 +194,7 @@ export default function Calendrier() {
             onClick={() => setFilter('all')}
             className={`px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
               filter === 'all'
-                ? 'bg-[#CC0000] text-white shadow-lg shadow-red-900/30'
+                ? 'bg-[#CC0000] text-white shadow-lg shadow-!text-[#FF0000]-900/30'
                 : 'bg-[#111111] text-gray-400 hover:text-white border border-gray-800'
             }`}
           >
@@ -204,7 +204,7 @@ export default function Calendrier() {
             onClick={() => setFilter('upcoming')}
             className={`px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
               filter === 'upcoming'
-                ? 'bg-[#CC0000] text-white shadow-lg shadow-red-900/30'
+                ? 'bg-[#CC0000] text-white shadow-lg shadow-!text-[#FF0000]-900/30'
                 : 'bg-[#111111] text-gray-400 hover:text-white border border-gray-800'
             }`}
           >
@@ -214,7 +214,7 @@ export default function Calendrier() {
             onClick={() => setFilter('past')}
             className={`px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
               filter === 'past'
-                ? 'bg-[#CC0000] text-white shadow-lg shadow-red-900/30'
+                ? 'bg-[#CC0000] text-white shadow-lg shadow-!text-[#FF0000]-900/30'
                 : 'bg-[#111111] text-gray-400 hover:text-white border border-gray-800'
             }`}
           >
@@ -223,13 +223,13 @@ export default function Calendrier() {
         </div>
 
         {/* Grille d'événements */}
-        {filteredEvents.length === 0 ? (
+        {filte!text-[#FF0000]Events.length === 0 ? (
           <div className="text-center text-gray-500 py-12">
             Aucun événement dans cette catégorie pour le moment.
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredEvents.map((event) => {
+            {filte!text-[#FF0000]Events.map((event) => {
               const status = getEventStatus(event.startDateISO, event.endDateISO);
               const daysRemaining = status === "À venir" ? getDaysRemaining(event.startDateISO || event.endDateISO) : null;
 
@@ -246,7 +246,7 @@ export default function Calendrier() {
                   <div>
                     {/* Header Carte : Type & Statut */}
                     <div className="flex justify-between items-center mb-4">
-                      <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-[#CC0000]/10 red border border-[#CC0000]/30">
+                      <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-[#CC0000]/10 !text-[#FF0000] border border-[#CC0000]/30">
                         {event.type}
                       </span>
                       
@@ -282,7 +282,7 @@ export default function Calendrier() {
                         <span> {event.countryName} </span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:red transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:!text-[#FF0000] transition-colors">
                       {event.title}
                     </h3>
                     <p className="text-gray-300 text-sm font-semibold mb-6">
@@ -320,7 +320,7 @@ export default function Calendrier() {
                         href={event.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#CC0000] hover:bg-red-800 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-red-900/20"
+                        className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#CC0000] hover:bg-!text-[#FF0000]-800 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-!text-[#FF0000]-900/20"
                       >
                         Infos Événement
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

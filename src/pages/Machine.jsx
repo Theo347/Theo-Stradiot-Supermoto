@@ -4,7 +4,7 @@ export default function Machine() {
     <section className="pt-28 pb-20 bg-[#111111] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center" data-aos="zoom-in">
-          <h2 className="text-4xl font-bold uppercase">La <span className="red">Machine</span></h2>
+          <h2 className="text-4xl font-bold uppercase">La <span className="!text-[#FF0000]">Machine</span></h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-100 font-semibold max-w-2xl mx-auto">
             L'optimisation d'une moto en configuration supermoto vise à concilier le grip extrême sur l'asphalte, la stabilité au gros freinage et la capacité à encaisser la partie terre et ses sauts.
@@ -19,7 +19,7 @@ export default function Machine() {
           />
           <h3 className="text-5xl md:text-6xl font-extrabold uppercase leading-tight text-center">
             250{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#CC0000] to-!text-[#FF0000]-500">
               CRF
             </span>
           </h3>
