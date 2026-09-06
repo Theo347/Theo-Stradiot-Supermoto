@@ -22,7 +22,7 @@ function App() {
       duration: 800,
       once: true,
       offset: 100,
-      disable: window.innerWidth < 768,
+      disable: 'mobile',
     });
   }, []);
 
