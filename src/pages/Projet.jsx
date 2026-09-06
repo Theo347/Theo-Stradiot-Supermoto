@@ -4,7 +4,7 @@ export default function Projet() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div data-aos="fade-up">
-            <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-6">Ma <span className="text-red-brand">Présentation</span></h2>
+            <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-6">Ma <span className="red">Présentation</span></h2>
             <div className="text-gray-100 font-semibold space-y-4 text-sm sm:text-base">
               <p className="text-lg sm:text-xl font-bold text-white">Je m’appelle Théo Stradiot, j’ai 20 ans et je vis en Belgique, près de Péruwelz.</p>
               <p>Le Supermoto représente pour moi bien plus qu’un sport : c’est une discipline exigeante qui mélange technique, précision, mental et engagement total.</p>
@@ -12,15 +12,15 @@ export default function Projet() {
               
               <h3 className="text-lg sm:text-xl font-extrabold text-white mt-8 mb-4">Ce qui me motive profondément :</h3>
               <ul className="space-y-2 font-bold">
-                <li className="flex items-center gap-2 text-white"><span className="text-red-brand">▸</span> Le dépassement de soi</li>
-                <li className="flex items-center gap-2 text-white"><span className="text-red-brand">▸</span> La progression constante</li>
-                <li className="flex items-center gap-2 text-white"><span className="text-red-brand">▸</span> La rigueur de l’entraînement</li>
+                <li className="flex items-center gap-2 text-white"><span className="red">▸</span> Le dépassement de soi</li>
+                <li className="flex items-center gap-2 text-white"><span className="red">▸</span> La progression constante</li>
+                <li className="flex items-center gap-2 text-white"><span className="red">▸</span> La rigueur de l’entraînement</li>
               </ul>
             </div>
           </div>
 
           <div data-aos="fade-up" data-aos-delay="200">
-            <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-6">Les 3 axes du <span className="text-red-brand">Projet</span></h2>
+            <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-6">Les 3 axes du <span className="red">Projet</span></h2>
             <div className="space-y-6">
               <div className="bg-[#111111] p-5 sm:p-6 rounded-lg border-l-4 border-[#CC0000] shadow-md" data-aos="fade-left" data-aos-delay="300">
                 <h4 className="text-lg sm:text-xl font-bold text-white mb-2">1️⃣ Préparation physique</h4>
