@@ -10,10 +10,11 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Projet from './pages/Projet';
 //import Machine from './pages/Machine';
+import Reseaux_Sociaux from './pages/ReseauxSociaux';
 import Partenaires from './pages/Partenaires';
 import Sponsors from './pages/sponsors';
-import Contact from './pages/Contact';
 import Calendrier from './pages/Calendrier';
+import Contact from './pages/Contact';
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/projet" element={<Projet />} />
             {/*<Route path="/machine" element={<Machine />} />*/}
             <Route path="/partenaires" element={<Partenaires />} />
+            <Route path="/reseaux-sociaux" element={<Reseaux_Sociaux />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/calendrier" element={<Calendrier />} />
             <Route path="/contact" element={<Contact />} />
