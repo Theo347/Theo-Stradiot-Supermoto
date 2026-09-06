@@ -166,7 +166,7 @@ export default function Calendrier() {
 
   const sortedEvents = getSortedEvents(events);
 
-  const filte!text-[#FF0000]Events = sortedEvents.filter((event) => {
+  const filteredEvents = sortedEvents.filter((event) => {
     const status = getEventStatus(event.startDateISO, event.endDateISO);
     if (filter === 'upcoming') return status === "À venir" || status === "En ce moment même";
     if (filter === 'past') return status === "Terminé";
@@ -194,7 +194,7 @@ export default function Calendrier() {
             onClick={() => setFilter('all')}
             className={`px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
               filter === 'all'
-                ? 'bg-[#CC0000] text-white shadow-lg shadow-!text-[#FF0000]-900/30'
+                ? 'bg-[#CC0000] text-white shadow-lg shadow-red-950/30'
                 : 'bg-[#111111] text-gray-400 hover:text-white border border-gray-800'
             }`}
           >
@@ -204,7 +204,7 @@ export default function Calendrier() {
             onClick={() => setFilter('upcoming')}
             className={`px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
               filter === 'upcoming'
-                ? 'bg-[#CC0000] text-white shadow-lg shadow-!text-[#FF0000]-900/30'
+                ? 'bg-[#CC0000] text-white shadow-lg shadow-red-950/30'
                 : 'bg-[#111111] text-gray-400 hover:text-white border border-gray-800'
             }`}
           >
@@ -214,7 +214,7 @@ export default function Calendrier() {
             onClick={() => setFilter('past')}
             className={`px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all ${
               filter === 'past'
-                ? 'bg-[#CC0000] text-white shadow-lg shadow-!text-[#FF0000]-900/30'
+                ? 'bg-[#CC0000] text-white shadow-lg shadow-red-950/30'
                 : 'bg-[#111111] text-gray-400 hover:text-white border border-gray-800'
             }`}
           >
@@ -223,13 +223,13 @@ export default function Calendrier() {
         </div>
 
         {/* Grille d'événements */}
-        {filte!text-[#FF0000]Events.length === 0 ? (
+        {filteredEvents.length === 0 ? (
           <div className="text-center text-gray-500 py-12">
             Aucun événement dans cette catégorie pour le moment.
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filte!text-[#FF0000]Events.map((event) => {
+            {filteredEvents.map((event) => {
               const status = getEventStatus(event.startDateISO, event.endDateISO);
               const daysRemaining = status === "À venir" ? getDaysRemaining(event.startDateISO || event.endDateISO) : null;
 
@@ -320,7 +320,7 @@ export default function Calendrier() {
                         href={event.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#CC0000] hover:bg-!text-[#FF0000]-800 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-!text-[#FF0000]-900/20"
+                        className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#CC0000] hover:bg-red-700 text-white font-bold text-sm rounded-xl transition-all shadow-md shadow-red-950/20"
                       >
                         Infos Événement
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
