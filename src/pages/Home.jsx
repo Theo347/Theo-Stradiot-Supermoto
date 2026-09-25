@@ -11,7 +11,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="mt-4 sm:mt-6 text-base sm:text-xl font-semibold text-gray-100 max-w-lg leading-relaxed">
-          Jeune pilote belge passionné de Supermoto, je construis aujourd’hui un projet sportif sérieux avec un objectif clair : progresser et participer aux plus grands événements, tels que les championnats de Belgique et de France, avec pour ambition ultime de prendre part au mythique Superbiker de Mettet.
+          Futur pilote belge passionné de Supermoto, je construis aujourd’hui un projet sportif sérieux avec un objectif clair : progresser et participer aux plus grands événements, tels que les championnats de Belgique et de France, avec pour ambition ultime de prendre part au mythique Superbiker de Mettet.
         </p>
         <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto" data-aos="fade-up" data-aos-delay="200">
           <Link to="/partenaires" className="bg-[#CC0000] hover:bg-!text-[#FF0000]-800 text-white font-bold py-3 px-8 rounded-full text-center transition-transform hover:scale-105 shadow-lg shadow-!text-[#FF0000]-900/30">
