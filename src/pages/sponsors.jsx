@@ -15,7 +15,7 @@ export default function sponsors() {
           </h2>
           <div className="w-24 h-1 bg-[#CC0000] mx-auto mt-4"></div>
           <p className="mt-6 text-gray-300 font-semibold max-w-2xl mx-auto">
-            Découvrez les entreprises et marques qui me soutiennent pour la saison 2026.
+            Découvrez les entreprises et marques qui me soutiennent pour la saison 2027.
           </p>
         </div>
 
